@@ -1,6 +1,7 @@
 module NekoBot
 	module Config
 		REDDIT = { username: 'username',password:'password'}
+		FirstAdmin='snoonet/guide/nekosune'
 		Channels= [
 			{
 				channel: '##testbots', 
