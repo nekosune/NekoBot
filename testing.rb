@@ -4,17 +4,15 @@ Dir[File.dirname(__FILE__)+'/libs/*.rb'].each { |file| require file}
 Dir[File.dirname(__FILE__)+'/config/*.rb'].each { |file| require file}
 require 'pp'
 
-
-
-
 bot=Cinch::Bot.new  do
 	configure do |c|
 		c.server="irc.snoonet.org"
-		c.channels=["##testbots"]
+		c.channels=NekoBot::Config::Channels.map { |val| "#{val[:channel]}"}
 		c.plugins.plugins=BasicPlugin.plugins
 	end
 end
 #bot.start
 
 reddit=NekoBot::Reddit.new
-reddit.latest='kitty'
+pp reddit.latest('nekosune')
+reddit.set_latest('nekosune','yfskc')
