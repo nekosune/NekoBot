@@ -11,8 +11,8 @@ bot=Cinch::Bot.new  do
 		c.plugins.plugins=BasicPlugin.plugins
 	end
 end
-#bot.start
+bot.start
 
-reddit=NekoBot::Reddit.new
-pp reddit.latest('nekosune')
-reddit.set_latest('nekosune','yfskc')
+#reddit=NekoBot::Reddit.new
+#pp reddit.latest('nekosune')
+#reddit.set_latest('nekosune','yfskc')
