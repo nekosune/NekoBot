@@ -5,7 +5,7 @@ class RedditAnnounce < BasicPlugin
 	match "whoami"
 
 	def execute(m)
-		#m.reply "#{m.user.host}"
+		m.reply "#{m.user.host}"
 		m.reply DatabaseHandler.instance.latest('nekosune')
 	end
 end
